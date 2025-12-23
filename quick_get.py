@@ -8,7 +8,7 @@ with open(key_path,encoding="utf8") as f:
 client = TodoistAPI(api_key)
 
 if len(sys.argv) == 1:
-    raise Exception("Usage: "+sys.argv[0]+" <todoist query>")
+    query = "##inbox"
 else:
     query = " ".join(sys.argv[1:])
 
