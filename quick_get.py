@@ -16,5 +16,5 @@ resp = client.filter_tasks(query=query)
 
 for i in resp:
     for j in i:
-        print(j.content)
+        print(f"{j.id}: {j.content}")
 
